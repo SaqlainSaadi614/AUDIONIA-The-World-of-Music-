@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIONIA [the World of Sound]</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    <style>
+     
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpeg" alt="logo"><span>AUDIONIA</span></li>
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="/songs/About.html">ABOUT</a></li>
+            <li><a href="#List">SONGS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="home" id="Home">
+            <h1>Welcome to AUDIONIA</h1>
+            <p>Discover the world of music, from the ancient Greeks to the modern era. Listen, experience, and learn.</p>
+        </div>
+        <div class="list" id="List">
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="1">
+                <span>Jany is dil ka hal</span>
+                <span class="songListPlay"><span class="timeSpend">6:13 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="2">
+                <span>Sun Saiyan</span>
+                <span class="songListPlay"><span class="timeSpend">4:16 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="3">
+                <span>Kya kr diya</span>
+                <span class="songListPlay"><span class="timeSpend">3:35 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="4">
+                <span>Sultan Album</span>
+                <span class="songListPlay"><span class="timeSpend">37:16 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="5">
+                <span>Aujla X Divine Album</span>
+                <span class="songListPlay"><span class="timeSpend">24:03 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="6">
+                <span>Here & There</span>
+                <span class="songListPlay"><span class="timeSpend">4:32 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="7">
+                <span>Its Hustle</span>
+                <span class="songListPlay"><span class="timeSpend">3:45 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="7">
+                <span>12Am - 12Pm</span>
+                <span class="songListPlay"><span class="timeSpend">3:57 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="8">
+                <span>Yar veliya</span>
+                <span class="songListPlay"><span class="timeSpend">2:16 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="9">
+                <span>Ye tu ne kya kiya</span>
+                <span class="songListPlay"><span class="timeSpend">5:06 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="10">
+                <span>Bulleya</span>
+                <span class="songListPlay"><span class="timeSpend">4:33 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="11">
+                <span>YKWIM</span>
+                <span class="songListPlay"><span class="timeSpend">3:39 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="12">
+                <span>Akh Lari</span>
+                <span class="songListPlay"><span class="timeSpend">3:15 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="13">
+                <span>Gain Off</span>
+                <span class="songListPlay"><span class="timeSpend">2:42 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="14">
+                <span>baby Gal Suno</span>
+                <span class="songListPlay"><span class="timeSpend">3:44 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="logo1.jpeg" alt="15">
+                <span>Mera Diwanapan</span>
+                <span class="songListPlay"><span class="timeSpend">3:21 <i class='bx bx-play-circle play-pause'></i></span></span>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <div class="bottom">
+        <input type="range" name="range" id="ProgressBar" min="0" max="100">
+        <div class="bottom-content">
+            <div class="song-name">Jany is dil ka hal</div>
+            <img src="playing.gif" id="gif" alt="Player" style="width: 30%; height: 50px;">
+            <div class="icons">
+                <i class='bx bx-skip-previous-circle' id="previous"></i>
+                <i class='bx bx-play-circle' id="masterPlay"></i>
+                <i class='bx bx-skip-next-circle' id="next"></i>
+            </div>
+            <br><br>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="Info">
+        This website is developed by <span style="font-family: cursive; font-weight: bolder; color: skyblue;">SAQLAIN SAADI</span>
+
+        </div>
+
+        <div class="rights">
+            &copy; 2024 AUDIONIA.   | All rights reserved.
+        </div>
+    </footer>
+
+   <script src="script.js">
+   </script>
+     
+</body>
+</html>
+
+
+
+
+

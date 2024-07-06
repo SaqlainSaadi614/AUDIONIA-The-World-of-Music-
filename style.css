@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: gray;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background: #000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 80px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.brand span {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    padding-right: 25px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    background: #000;
+    color: white;
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.home {
+    align-self: flex-start;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list {
+    width: 100%;
+}
+
+.songItem {
+    display: flex;
+    align-items: center;
+    background: white;
+    color: black;
+    width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.songItem i{
+    cursor: pointer;
+}
+
+
+.songItem img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.songListPlay {
+    display: flex;
+    align-items: center;
+}
+
+.timeSpend {
+    margin-right: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: #000;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+#ProgressBar {
+    width: 70%;
+    max-width: 90vw;
+    cursor: pointer;
+    accent-color: rgb(44, 126, 233); /* Change the color of the range input */
+    margin-bottom: 10px;
+}
+
+.bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /* Adjust the space between items */
+}
+
+.icons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.songinfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-content img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.Info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: darkgray;
+    background: #000;
+    padding-top: 30px;
+}
+
+.rights{
+    padding-top: 20px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+}
+
+@media (max-width: 1024px) {
+    .brand {
+        font-size: 16px;
+    }
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+    .brand span {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 20px;
+    }
+    .icons {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand {
+        font-size: 14px;
+    }
+    .brand img {
+        width: 30px;
+        height: 30px;
+    }
+    .brand span {
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 15px;
+    }
+    .icons {
+        width: 50%;
+    }
+    .songItem {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .timeSpend {
+        margin-top: 5px;
+    }
+    .icons {
+        flex-direction: column;
+        width: 100%;
+    }
+    #ProgressBar {
+        width: 90%;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 12px;
+    }
+    .brand img {
+        width: 25px;
+        height: 25px;
+    }
+    .brand span {
+        font-size: 0.8rem;
+    }
+    .container {
+        padding: 10px;
+    }
+    .icons {
+        width: 60%;
+    }
+}
